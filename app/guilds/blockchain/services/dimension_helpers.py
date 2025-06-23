@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from app.models.star_schema import DimUser, DimStatus, DimDate, DimConcept
+from app.guilds.blockchain.schemas.star_schema import DimUser, DimStatus, DimDate, DimConcept
 from datetime import datetime
 
 def ensure_user(db: Session, email: str) -> DimUser:

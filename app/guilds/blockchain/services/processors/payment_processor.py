@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from app.guilds.blockchain.services.dimension_helpers import ensure_user, ensure_status, ensure_date, ensure_concept
-from app.models.star_schema import FactTransaction
+from app.guilds.blockchain.schemas.star_schema import FactTransaction
 from app.guilds.blockchain.schemas.events import CryptoPaymentData
 
 class PaymentProcessor:

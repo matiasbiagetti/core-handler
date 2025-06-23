@@ -1,6 +1,6 @@
 from app.events.schemas.base import EventTopic
 from app.guilds.blockchain.services.dimension_helpers import ensure_date, ensure_status, ensure_user
-from app.models.star_schema import FactTransaction
+from app.guilds.blockchain.schemas.star_schema import FactTransaction
 from app.guilds.blockchain.schemas.events import BuySellCryptoData
 from sqlalchemy.orm import Session
 

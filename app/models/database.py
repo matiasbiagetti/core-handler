@@ -38,7 +38,7 @@ def get_db():
 
 def create_tables():
     """Create all tables in the database (for development)"""
-    from app.models.star_schema import (
+    from app.guilds.blockchain.schemas.star_schema import (
         DimUser, 
         DimStatus, 
         DimDate, 
