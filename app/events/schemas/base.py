@@ -4,6 +4,7 @@ from datetime import datetime
 from typing import Optional
 
 class EventTopic(str, Enum):
+    ## Blockchain
     CRYPTO_PAYMENT = "crypto.payment"
     BUY_CRYPTO = "buy.crypto"
     SELL_CRYPTO = "sell.crypto"
@@ -11,7 +12,6 @@ class EventTopic(str, Enum):
 class EventMetadata(BaseModel):
     timestamp: datetime
     source: Optional[str] = None
-    guild: Optional[str] = None  # Optional, will be determined by topic
 
 class CallbackRequest(BaseModel):
     topic: EventTopic

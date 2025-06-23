@@ -49,7 +49,7 @@ class DimConcept(Base):
 
 # Fact Table
 class FactTransaction(Base):
-    __tablename__ = "facttransaction"
+    __tablename__ = "fact_transaction"
     
     id = Column(Integer, primary_key=True, index=True)
     transaction_id = Column(String(100), unique=True, nullable=False, index=True)
